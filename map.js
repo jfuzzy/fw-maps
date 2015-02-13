@@ -1,6 +1,14 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZ1enp5IiwiYSI6ImxCMkF5NVUifQ.Zg6RDpdbQ-7WGd2C_niK7g';
 
-var map = L.mapbox.map('map', 'jfuzzy.jc52jpo4')
+var northWest = L.latLng(85, -180),
+    southEast = L.latLng(-85, 180),
+    bounds = L.latLngBounds(northWest, southEast);
+
+var map = L.mapbox.map('map', 'jfuzzy.jc52jpo4', {
+    minZoom: 3,
+    maxZoom: 12,
+    maxBounds: bounds
+    })
   .setView([44.7077, -122.0471], 3);
 
 var layers = document.getElementById('menu-ui');
