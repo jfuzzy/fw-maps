@@ -1,7 +1,7 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZ1enp5IiwiYSI6ImxCMkF5NVUifQ.Zg6RDpdbQ-7WGd2C_niK7g';
 
 var map = L.mapbox.map('map', 'jfuzzy.jc52jpo4', {
-    minZoom: 3,
+    minZoom: 2,
     maxZoom: 12,
     })
   .setView([33.5, -30.0], 3);
